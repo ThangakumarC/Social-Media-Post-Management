@@ -1,6 +1,6 @@
 # Social Media Post Management
 
-A small recommendation demo that uses a Node/Express backend with MongoDB and a React frontend (Create React App). The backend serves simple user and post endpoints and implements a lightweight recommendation endpoint that prioritizes posts matching user interests and then popular posts.
+A small recommendation demo that uses a Node/Express backend with MongoDB and a React frontend. The backend serves simple user and post endpoints and implements a lightweight recommendation endpoint that prioritizes posts matching user interests and then popular posts.
 
 ## Repo layout
 
