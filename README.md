@@ -77,34 +77,11 @@ npm install
 npm start
 ```
 
-If you want to serve the existing production build locally (the `build/` folder is already included):
-
-- Option A: Serve with a static server (e.g., `serve` package)
-
-```powershell
-npm install -g serve
-serve -s frontend/build -l 3000
-```
-
-- Option B: Copy `frontend/build` into a hosting/static server.
-
-The frontend expects the backend API to be available (default backend URL: `http://localhost:5000`). If the app uses a different host/port, update the client-side configuration or reverse-proxy accordingly.
-
 ## Data notes
 
 - The backend uses a `users` collection. Users should have `_id`, `username`, `password`, and optionally `interests` (array of tags).
 - The `posts` collection stores posts with fields: `userId`, `user` (username), `content`, `tags` (array), `likes` (array of userIds).
 
-## Development tips
-
-- Run MongoDB locally (e.g., `mongod` or using a Docker container):
-
-```powershell
-# with Docker (Linux/Windows w/ Docker Desktop)
-docker run --name mongodb -p 27017:27017 -d mongo:6.0
-```
-
-- Seed the database with a few users and posts to test login, liking, and recommendations.
 
 ## Known limitations
 
